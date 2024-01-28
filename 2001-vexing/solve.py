@@ -78,7 +78,7 @@ def get_todo(M):
   
   return todo
 
-def solve2(M):
+def solve(M):
   todo = deque([(M, 1)])
   visited = set()
 
@@ -116,7 +116,7 @@ for i in range(len(lines)):
   if line[0].isnumeric():
     if MAP != None:
       print_map(MAP)
-      print(solve2(MAP))
+      print(solve(MAP))
     MAP = []
   else:
     row = []
